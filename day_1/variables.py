@@ -32,11 +32,13 @@ class Variable:
     def declare_print(self):
         print('This is the function that prints the declared values\n-name\n-age\n-salary')
         print('################################################################')
-        print(f"Hi my name is {self.name}")
+        print(f"Hi {self.name}, response recorded")
         print('################################################################')
-        print(f"This is my age {self.age}")
+        print(f"Your age is recorded as {self.age}")
         print('################################################################')
-        print(f"This is my salary{self.salary}")
+        print(f"Your salary is recorded as {self.salary}")
+        print('################################################################')
+        print(f"WELCOME {self.name}, I see you are {self.age} old, hope you have a good time")
 
 
 
