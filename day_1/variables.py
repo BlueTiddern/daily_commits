@@ -38,7 +38,15 @@ class Variable:
         print('################################################################')
         print(f"Your salary is recorded as {self.salary}")
         print('################################################################')
-        print(f"WELCOME {self.name}, I see you are {self.age} old, hope you have a good time")
+        print(f"WELCOME {self.name}, I see you are {self.age} years old, hope you have a good time")
+
+    def data_type_print(self):
+        new_list = [1,1.345,'example_text',[1,2,3],{'k1':'apple','k2':'grape'}]
+        print('################################################################')
+        print('################################################################')
+        for i in new_list:
+            print(f'This is the value : {i}\nIts type is {type(i)}')
+            print('################################################################')
 
 
 
