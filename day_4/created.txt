@@ -1,0 +1,2 @@
+This is to write into the file.
+Here this file is created to hold the data
