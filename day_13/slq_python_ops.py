@@ -114,3 +114,6 @@ FROM cte;
 """,conn)
 print("\n#########################\nJoining the tables....\n#########################\n\nResult of JOIN\n",tabulate(join_pd,headers='keys',tablefmt='psql',showindex=False))
 # -----------------------------------------------------------------------
+
+conn.commit()
+conn.close()
