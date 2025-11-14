@@ -24,8 +24,10 @@ def extract():
         updated_resp_list.append(selective_dict)
 
 
-    with open("poke.JSON", 'w') as f:
+    with open(r"data\poke.JSON", 'w') as f:
         json.dump(updated_resp_list, f, indent=4)
+
+extract()
 
 
 

@@ -7,12 +7,12 @@ from tabulate import tabulate
 
 def load():
     # Loading CSVs into DataFrames
-    poke_df = pd.read_csv("Poke_list.csv")
-    ability_df = pd.read_csv("Ability_list.csv")
-    stat_df = pd.read_csv("Stat_list.csv")
+    poke_df = pd.read_csv(r"data\Poke_list.csv")
+    ability_df = pd.read_csv(r"data\Ability_list.csv")
+    stat_df = pd.read_csv(r"data\Stat_list.csv")
 
     # Connecting to SQLite DB (creates file if not exists)
-    conn = sqlite3.connect("poke_db.db")
+    conn = sqlite3.connect(r"data\poke_db.db")
 
     # Writing DataFrames to SQLite tables
     poke_df.to_sql("pokemon", conn, if_exists="replace", index=False)
@@ -37,11 +37,13 @@ def load():
 
     output_df = pd.read_sql("SELECT * FROM combined", conn)
 
-    output_df.to_csv("final.csv")
+    output_df.to_csv(r"data\final.csv")
 
     print(tabulate(output_df, headers="keys",tablefmt="psql", showindex=False))
 
     conn.close()
+
+
 
 
 
