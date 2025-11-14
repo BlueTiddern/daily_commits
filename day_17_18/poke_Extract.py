@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 from tabulate import tabulate
+import json
 
 url = 'https://pokeapi.co/api/v2/pokemon/'
 
@@ -17,7 +18,8 @@ for each in resp_list:
     updated_resp_list.append(selective_dict)
 
 
-print(updated_resp_list[0])
+with open("poke.JSON", 'w') as f:
+    json.dump(updated_resp_list, f, indent=4)
 
 
 
