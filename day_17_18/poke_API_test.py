@@ -1,8 +1,13 @@
 import pandas as pd
 import requests
 from tabulate import tabulate
+from dotenv import load_dotenv
+import os
 
-url = 'https://pokeapi.co/api/v2/pokemon/rhydon'
+load_dotenv()
+
+env_url = os.getenv("API_URL")
+url = f'{env_url}rhydon'
 
 response = requests.get(url).json()
 

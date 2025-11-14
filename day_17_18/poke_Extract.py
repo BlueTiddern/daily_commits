@@ -2,9 +2,14 @@ import pandas as pd
 import requests
 from tabulate import tabulate
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+env_url = os.getenv("API_URL")
 
 def extract():
-    url = 'https://pokeapi.co/api/v2/pokemon/'
+    url = env_url
 
     poke_list = ['dratini','raichu','moltres','articuno','zapdos']
     resp_list = []
