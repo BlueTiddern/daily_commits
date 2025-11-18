@@ -1,0 +1,68 @@
+{
+    "straw_hat_crew": [
+        {
+            "name": "Monkey D. Luffy",
+            "role": "Captain",
+            "bounty": "3,000,000,000",
+            "dream": "Become the Pirate King",
+            "Devil_fruit_power": "Zoan Type Nika"
+        },
+        {
+            "name": "Roronoa Zoro",
+            "role": "Swordsman",
+            "bounty": "1,111,000,000",
+            "dream": "Become the world's greatest swordsman"
+        },
+        {
+            "name": "Nami",
+            "role": "Navigator",
+            "bounty": "366,000,000",
+            "dream": "Create a complete map of the world"
+        },
+        {
+            "name": "Usopp",
+            "role": "Sniper",
+            "bounty": "500,000,000",
+            "dream": "Become a brave warrior of the sea"
+        },
+        {
+            "name": "Sanji",
+            "role": "Cook",
+            "bounty": "1,032,000,000",
+            "dream": "Find the All Blue"
+        },
+        {
+            "name": "Tony Tony Chopper",
+            "role": "Doctor",
+            "bounty": "1,000",
+            "dream": "Become a doctor capable of curing any disease",
+            "Devil_fruit_power": "Human Human"
+        },
+        {
+            "name": "Nico Robin",
+            "role": "Archaeologist",
+            "bounty": "930,000,000",
+            "dream": "Discover the true history",
+            "Devil_fruit_power": "Flower Flower"
+        },
+        {
+            "name": "Franky",
+            "role": "Shipwright",
+            "bounty": "394,000,000",
+            "dream": "Build and sail a dream ship around the world"
+        },
+        {
+            "name": "Brook",
+            "role": "Musician",
+            "bounty": "383,000,000",
+            "dream": "Reunite with Laboon",
+            "Devil_fruit_power": "Soul Soul"
+        },
+        {
+            "name": "Jinbe",
+            "role": "Helmsman",
+            "bounty": "1,100,000,000",
+            "dream": "Achieve coexistence between humans and fish-men"
+        }
+    ]
+}
